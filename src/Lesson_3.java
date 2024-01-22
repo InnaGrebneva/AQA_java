@@ -3,23 +3,23 @@ import java.util.Arrays;
 public class Lesson_3 {
 
     public static void main(String[] args) {
-        System.out.println("Çàäàíèå 1 : " + checkSum(1, 6));
+        System.out.println("Задание 1 : " + checkSum(1, 6));
         homeTwo(-6);
-        System.out.println("Çàäàíèå 3 : " + number(-5));
-        System.out.print("Çàäàíèå 4: ");
+        System.out.println("Задание 3 : " + number(-5));
+        System.out.print("Задание 4: ");
         print4("World", 3);
         leapYear(1990);
         massive();
-        System.out.print("Çàäàíèå 7: ");
+        System.out.print("Задание 7: ");
         massive_2();
         System.out.println();
-        System.out.print("Çàäàíèå 8: ");
+        System.out.print("Задание 8: ");
         massive_3();
         System.out.println();
-        System.out.print("Çàäàíèå 9: ");
+        System.out.print("Задание 9: ");
         massive_4();
         System.out.println();
-        System.out.println("Çàäàíèå 10: " + Arrays.toString(getArr(5, 2)));
+        System.out.println("Задание 10: " + Arrays.toString(getArr(5, 2)));
 
     }
 
@@ -30,9 +30,9 @@ public class Lesson_3 {
 
     public static void homeTwo(int a) {
         if (a >= 0) {
-            System.out.println("Çàäàíèå 2: ×èñëî ïîëîæèòåëüíîå");
+            System.out.println("Задание 2: Число положительное");
         } else {
-            System.out.println("Çàäàíèå 2: ×èñëî îòðèöàòåëüíîå");
+            System.out.println("Задание 2: Число отрицательное");
         }
     }
 
@@ -54,23 +54,23 @@ public class Lesson_3 {
     public static void leapYear(int year) {
 
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-            System.out.println("Çàäàíèå 5: " + year + " Ãîä âèñîêîñíûé");
+            System.out.println("Задание 5: " + year + " Год високосный");
         } else {
-            System.out.println("Çàäàíèå 5: " + year + " Ãîä íåâèñîêîñíûé");
+            System.out.println("Задание 5: " + year + " Год невисокосный");
         }
 
     }
 
     public static void massive() {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-        for (int i = 0; i < arr.length; i++) {// çäåñü äîëæíî áûòü int i=0;
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
                 arr[i] = 1;
             } else {
                 arr[i] = 0;
             }
         }
-        System.out.println("Çàäàíèå 6: " + Arrays.toString(arr));
+        System.out.println("Задание 6: " + Arrays.toString(arr));
     }
 
     public static void massive_2() {
