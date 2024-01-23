@@ -7,11 +7,11 @@ public class Main {
 
 	private static void taskTwo() {
 		Employee[] employees = new Employee[5];
-		employees[0] = new Employee("Сергей Иванов", "инженер", "sergey@mail.ru", "+79184567896", 64600, 46);
-		employees[1] = new Employee("Арин Дмитрий", "логист", "arin@mail.ru", "+79187892586", 47600, 35);
-		employees[2] = new Employee("Иванова Анна", "менеджер", "anna@mail.ru", "+79194856314", 45000, 27);
-		employees[3] = new Employee("Петров Петр", "водитель", "pepe@mail.ru", "+79145567898", 37000, 56);
-		employees[4] = new Employee("Хазин Андрей", "директор", "hazin@mail.ru", "+79136987746", 110000, 42);
+		employees[0] = new Employee("РЎРµСЂРіРµР№ РРІР°РЅРѕРІ", "РёРЅР¶РµРЅРµСЂ", "sergey@mail.ru", "+79184567896", 64600, 46);
+		employees[1] = new Employee("РђСЂРёРЅ Р”РјРёС‚СЂРёР№", "Р»РѕРіРёСЃС‚", "arin@mail.ru", "+79187892586", 47600, 35);
+		employees[2] = new Employee("РРІР°РЅРѕРІР° РђРЅРЅР°", "РјРµРЅРµРґР¶РµСЂ", "anna@mail.ru", "+79194856314", 45000, 27);
+		employees[3] = new Employee("РџРµС‚СЂРѕРІ РџРµС‚СЂ", "РІРѕРґРёС‚РµР»СЊ", "pepe@mail.ru", "+79145567898", 37000, 56);
+		employees[4] = new Employee("РҐР°Р·РёРЅ РђРЅРґСЂРµР№", "РґРёСЂРµРєС‚РѕСЂ", "hazin@mail.ru", "+79136987746", 110000, 42);
 		for (Employee employee : employees) {
 			if (employee.age > 40) {
 				employee.print();
@@ -20,7 +20,7 @@ public class Main {
 	}
 	
 	private static void taskThree() {
-		Park myPark = new Park("Набережная, дом 6", "8915478", "mypark@mail.ru");
+		Park myPark = new Park("РќР°Р±РµСЂРµР¶РЅР°СЏ, РґРѕРј 6", "8915478", "mypark@mail.ru");
 		Park.Attraction trampoline = myPark.new Attraction("10:00-20:00", 300);
 		trampoline.print();
 	}
