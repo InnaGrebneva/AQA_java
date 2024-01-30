@@ -5,8 +5,8 @@ public class Triangle implements Perimetr {
     double sideA;
     double sideB;
     double sideC;
-    String color;
-    String borderColor;
+    private String color;
+    private String borderColor;
 
     Triangle(String name, int sideA, int sideB, int sideC, String color, String borderColor) {
         this.name = name;

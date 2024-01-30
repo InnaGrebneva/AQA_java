@@ -1,11 +1,11 @@
 package Figure;
 
 public class Rectangle implements Perimetr {
-    String name;
-    int sideA;
-    int sideB;
-    String color;
-    String borderColor;
+     String name;
+     int sideA;
+     int sideB;
+    private String color;
+    private String borderColor;
 
     Rectangle(String name, int sideA, int sideB, String color, String borderColor) {
         this.name = name;

@@ -1,10 +1,10 @@
 package Figure;
 
 public class Circle implements Perimetr {
-    String name;
-    double radius;
-    String color;
-    String borderColor;
+     String name;
+     double radius;
+    private String color;
+    private String borderColor;
 
     public Circle(String name, double radius, String color, String borderColor) {
         this.name = name;
@@ -12,16 +12,6 @@ public class Circle implements Perimetr {
         this.color = color;
         this.borderColor = borderColor;
     }
-
-
-    //@Override
-//    public double calculatePerimeter() {
-//        double P1;
-//        double Pi = 3.1415;
-//        P1 = 2 * Pi * radius;
-//        System.out.println("Перимет круга " + P1);
-//        return 0;
-//    }
 
     @Override
     public double calculateSquare() {

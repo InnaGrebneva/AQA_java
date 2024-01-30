@@ -1,9 +1,9 @@
 package Animals;
 
 public class Cat extends Animal {
-    String name;
-    static int count;
-    boolean satiety = false;
+    private String name;
+    private static int count;
+    private boolean satiety = false;
 
     Cat(String name) {
         this.name = name;
@@ -29,11 +29,11 @@ public class Cat extends Animal {
         if (food > 0 && food < plate.food) {
             plate.food = plate.food - food;
             this.satiety = true;
-            System.out.println("Кот " +name+ " покушал, его сытость: " +satiety);
+            System.out.println("Кот " + name + " покушал, его сытость: " + satiety);
 
         } else {
             this.satiety = false;
-            System.out.println("Кот " +name+ " не может съесть " + food + " еды, его сытость: " +satiety);
+            System.out.println("Кот " + name + " не может съесть " + food + " еды, его сытость: " + satiety);
         }
     }
 }

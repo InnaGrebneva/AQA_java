@@ -1,7 +1,7 @@
 package Animals;
 
 public class Animal {
-    String name;
+   private String name;
 
     public void run(int barrierLength) {
     }
