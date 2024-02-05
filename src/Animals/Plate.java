@@ -1,7 +1,14 @@
 package Animals;
 
 public class Plate {
-    int food;
+    private int food;
+
+    public void dropFood(int food) {
+        if (food > 0 && this.food > 0) {
+            this.food = this.food - food;
+        }
+    }
+
 
     public void addFood(int food) {
         if (food > 0) {
@@ -10,5 +17,8 @@ public class Plate {
         }
     }
 
-
+    public int getFood() {
+        return this.food;
+    }
 }
+

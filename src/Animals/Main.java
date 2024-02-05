@@ -13,25 +13,15 @@ public class Main {
         Cat.count();
 
         Plate plate = new Plate();
-        plate.addFood(15);
-//        System.out.println("В тарелку добавлено "+plate.food+ " еды");
-//        catBarsik.eat(10, plate);
-//        System.out.println("Остаток еды в тарелке " +plate.food);
-//        catBarsik.eat(10, plate);
-//        System.out.println("Остаток еды в тарелке " +plate.food);
+        plate.addFood(20);
 
-        Cat[] cat=new Cat[2];
-        cat[0]=new Cat("Жорик");
-        cat[1]=new Cat("Борис");
-        for (Cat i:cat){
-            // System.out.println("Остаток еды в тарелке " +plate.food);
-            i.eat(10,plate);
-            System.out.println("Остаток еды в тарелке " +plate.food);
+        Cat[] cat = new Cat[2];
+        cat[0] = new Cat("Жорик");
+        cat[1] = new Cat("Борис");
+        for (Cat i : cat) {
+                    i.eat(10, plate);
+            System.out.println("Остаток еды в тарелке " + plate.getFood());
         }
-
-
-
-
 
 
         Dog dogSharik = new Dog("Шарик");
@@ -46,8 +36,10 @@ public class Main {
 
         Dog.count();
 
+
         // System.out.println(dogSharik.name);
         //  System.out.println(dogBBB.name);
-
+        Animal.getCount();
     }
 }
+

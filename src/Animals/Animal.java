@@ -1,8 +1,16 @@
 package Animals;
 
 public class Animal {
-   private String name;
-
+    String name;
+    int maxRun;
+    int maxSwim;
+   static int count;
+    Animal(){
+        count++;
+    }
+    public static void getCount(){
+        System.out.println("Создано животных: " +count);
+    }
     public void run(int barrierLength) {
     }
 

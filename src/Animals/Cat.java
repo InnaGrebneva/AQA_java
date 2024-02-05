@@ -1,13 +1,13 @@
 package Animals;
 
 public class Cat extends Animal {
-    private String name;
-    private static int count;
-    private boolean satiety = false;
+    static int count;
+    private boolean satiety;
 
     Cat(String name) {
         this.name = name;
         count++;
+        super.maxRun = 200;
     }
 
     public static void count() {
@@ -15,10 +15,10 @@ public class Cat extends Animal {
     }
 
     public void run(int barrierLength) {
-        if (barrierLength <= 200 && barrierLength >= 0)
-            System.out.println(this.name + " пробежал " + barrierLength + " метров");
+        if (barrierLength <= super.maxRun && barrierLength > 0)
+            System.out.println(super.name + " пробежал " + barrierLength + " метров");
         else
-            System.out.println(this.name + " не может пробежать " + barrierLength + " метров");
+            System.out.println(super.name + " не может пробежать " + barrierLength + " метров");
     }
 
     public void swim(int barrierLength) {
@@ -26,14 +26,14 @@ public class Cat extends Animal {
     }
 
     public void eat(int food, Plate plate) {
-        if (food > 0 && food < plate.food) {
-            plate.food = plate.food - food;
-            this.satiety = true;
-            System.out.println("Кот " + name + " покушал, его сытость: " + satiety);
+        if (food > 0 && food <= plate.getFood()) {
+            plate.dropFood(food);
+            satiety = true;
+            System.out.println("Кот " + super.name + " покушал, его сытость: " + satiety);
 
         } else {
-            this.satiety = false;
-            System.out.println("Кот " + name + " не может съесть " + food + " еды, его сытость: " + satiety);
+            satiety = false;
+            System.out.println("Кот " + super.name + " не может съесть " + food + " еды, его сытость: " + satiety);
         }
     }
 }
